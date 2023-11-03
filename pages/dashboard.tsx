@@ -10,7 +10,7 @@ export default function DashboardPage() {
       <Title order={2} mb="md">
         Alerts
       </Title>
-      <AlertsList />
+      <AlertsList latestOnly />
       <Title order={2} my="md">
         Systems
       </Title>

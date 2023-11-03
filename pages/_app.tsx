@@ -6,6 +6,7 @@ import "@mantine/core/styles.css";
 
 import type { AppProps } from "next/app";
 import { MantineProvider, createTheme } from "@mantine/core";
+import { Notifications } from "@mantine/notifications";
 import { useLocalStorage } from "@/components/hooks/useLocalStorage";
 
 const theme = createTheme({
@@ -82,6 +83,7 @@ export default function App({ Component, pageProps }: AppProps) {
 
   return (
     <MantineProvider theme={theme}>
+      <Notifications position="bottom-center" />
       <Component {...pageProps} />
     </MantineProvider>
   );
